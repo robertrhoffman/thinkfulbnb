@@ -1,0 +1,208 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.group div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  /* unsure why this is not creating space between label + input */
+  border: 2px solid #ff385c;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px){
+
+  .group {
+    display: flex;
+    flex-direction: row
+  }
+
+   header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  } 
+
+  form label {
+    margin-top: 10px;
+  }
+
+  #about div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about img {
+    width: 30%;
+    margin-right: 10px;
+  }
+
+  #about p {
+    display:flex;
+    align-items: center;
+    width: 50%
+  }
+
+
+/* Ideas */
+
+  /* #ideas img {
+    width: 50%;    
+  } */
+
+  .idea-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+/* Host */
+  #host {
+    display: flex;
+    align-items: center;
+  }
+
+  #host div {
+    flex-direction: row;
+  }
+
+  .host-image {
+    width: 50%;
+  }
+
+  .host-class {
+   width: 50%;
+  }
+}
